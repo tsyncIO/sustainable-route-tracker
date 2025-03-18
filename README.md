@@ -1,88 +1,92 @@
-Sustainable Route Tracker
+# 🌍 Sustainable Route Tracker  
 
-The Sustainable Route Tracker is a web application designed to help users track carbon emissions for flight routes. It fetches flight route data from the AviationStack API and calculates carbon emissions using the Carbon Interface API. The app visualizes the data using interactive charts powered by Chart.js.
+The **Sustainable Route Tracker** is a web application designed to help users track **carbon emissions** for flight routes. It fetches flight route data from the **AviationStack API** and calculates **carbon emissions** using the **Carbon Interface API**. The app visualizes the data using interactive charts powered by **Chart.js**.  
 
-Features
-Flight Route Selection: Choose from a list of flight routes fetched from the AviationStack API.
+---
 
-Carbon Emissions Calculation: Calculate the carbon emissions for a selected flight route using the Carbon Interface API.
+## 🚀 Features  
 
-Visualization: View carbon emissions data in an interactive bar chart.
+✅ **Flight Route Selection** – Choose from a list of flight routes fetched from the **AviationStack API**.  
+✅ **Carbon Emissions Calculation** – Compute emissions for a selected flight route using the **Carbon Interface API**.  
+✅ **Interactive Visualization** – View carbon emissions data in **bar charts**.  
+✅ **Top Airports by Emissions** – Identify the **top 5 airports** with the highest emissions for a given country.  
+✅ **Responsive Design** – Works on all devices seamlessly.  
 
-Top Airports by Emissions: Search for the top 5 airports with the highest carbon emissions originating from a specific country.
+---
 
-Responsive Design: The app is fully responsive and works on all devices.
+## 🛠️ Technologies Used  
 
-Technologies Used
-Frontend: React.js
+| **Category**       | **Tech Stack**       |
+|--------------------|---------------------|
+| **Frontend**      | React.js             |
+| **Charting**      | Chart.js, react-chartjs-2 |
+| **API Integration** | Axios                |
+| **Styling**       | CSS                  |
+| **Routing**       | React Router DOM     |
 
-Charting: Chart.js, react-chartjs-2
+---
 
-API Integration: Axios
+## 🌐 APIs Used  
 
-Styling: CSS
+🔹 **[AviationStack API](https://aviationstack.com/)** – Fetches airport and flight route data.  
+🔹 **[Carbon Interface API](https://carboninterface.com/)** – Calculates carbon emissions for flight routes.  
 
-Routing: React Router DOM
+---
 
-APIs Used
-AviationStack API: Fetches airport and flight route data.
+## 📦 Setup Instructions  
 
-Carbon Interface API: Calculates carbon emissions for flight routes.
+### 🔧 Prerequisites  
+- **Node.js** (v16 or higher)  
+- **npm** (v8 or higher)  
+- **API keys** for AviationStack and Carbon Interface  
 
-Setup Instructions
-Prerequisites
-Node.js (v16 or higher)
+### 📥 Installation  
 
-npm (v8 or higher)
-
-API keys for AviationStack and Carbon Interface.
-
-Installation
-Clone the repository:
-
-bash
-Copy
+1️⃣ **Clone the repository**  
+\`\`\`bash
 git clone https://github.com/your-username/sustainable-route-tracker.git
 cd sustainable-route-tracker
-Install dependencies:
+\`\`\`
 
-bash
-Copy
+2️⃣ **Install dependencies**  
+\`\`\`bash
 npm install
-Set up environment variables:
-Create a .env file in the root directory and add your API keys:
+\`\`\`
 
-env
-Copy
+3️⃣ **Set up environment variables**  
+Create a `.env` file in the root directory and add your API keys:  
+\`\`\`env
 REACT_APP_AVIATIONSTACK_API_KEY=your_aviationstack_api_key
 REACT_APP_CARBON_INTERFACE_API_KEY=your_carbon_interface_api_key
-REACT_APP_BASENAME=/flight-emissions-tracker # Optional: Only if hosted in a subdirectory
-Run the app:
+REACT_APP_BASENAME=/flight-emissions-tracker  # Optional: Only if hosted in a subdirectory
+\`\`\`
 
-bash
-Copy
+4️⃣ **Run the app locally**  
+\`\`\`bash
 npm start
-The app will be available at http://localhost:3000.
+\`\`\`
+The app will be available at **http://localhost:3000**.  
 
-Deployment
-To deploy the app to GitHub Pages:
+---
 
-Set the homepage field in package.json:
+## 🚀 Deployment  
 
-json
-Copy
+### 📡 Deploying to GitHub Pages  
+
+1️⃣ **Set the `homepage` field in `package.json`**  
+\`\`\`json
 {
-  "homepage": "https://your-username.github.io/flight-emissions-tracker"
+  "homepage": "https://your-username.github.io/sustainable-route-tracker"
 }
-Install GitHub Pages package:
+\`\`\`
 
-bash
-Copy
+2️⃣ **Install the GitHub Pages package**  
+\`\`\`bash
 npm install gh-pages --save-dev
-Add deployment scripts to package.json:
+\`\`\`
 
-json
-Copy
+3️⃣ **Add deployment scripts in `package.json`**  
+\`\`\`json
 "scripts": {
   "predeploy": "npm run build",
   "deploy": "gh-pages -d build",
@@ -91,28 +95,33 @@ Copy
   "test": "react-scripts test",
   "eject": "react-scripts eject"
 }
-Deploy the app:
+\`\`\`
 
-bash
-Copy
+4️⃣ **Deploy the app**  
+\`\`\`bash
 npm run deploy
-The app will be available at https://your-username.github.io/flight-emissions-tracker.
+\`\`\`
 
-Usage
-Selecting a Flight Route
-On the homepage, select a flight route from the dropdown menu.
+✅ **Live App URL:**  
+The app will be available at **https://your-username.github.io/sustainable-route-tracker**.
 
-The app will fetch and display the carbon emissions for the selected route.
+---
 
-Searching for Top Airports by Emissions
-Select a country from the dropdown menu in the "Originate Visualization" section.
+## 📌 Usage  
 
-Click the "Search" button.
+### ✈️ **Selecting a Flight Route**  
+1️⃣ On the homepage, select a **flight route** from the dropdown menu.  
+2️⃣ The app fetches and displays **carbon emissions** for the selected route.  
 
-The app will display the top 5 airports with the highest carbon emissions originating from the selected country.
+### 🌎 **Searching for Top Airports by Emissions**  
+1️⃣ Select a **country** from the dropdown in the "Originate Visualization" section.  
+2️⃣ Click **"Search"** to view the **top 5 airports** with the highest emissions.  
 
-Folder Structure
-Copy
+---
+
+## 📂 Folder Structure  
+
+\`\`\`
 sustainable-route-tracker/
 ├── public/                  # Static assets
 ├── src/                     # Source code
@@ -126,30 +135,42 @@ sustainable-route-tracker/
 ├── .env                     # Environment variables
 ├── package.json             # Project dependencies and scripts
 └── README.md                # Project documentation
-Contributing
-Contributions are welcome! If you'd like to contribute, please follow these steps:
+\`\`\`
 
-Fork the repository.
+---
 
-Create a new branch for your feature or bugfix.
+## 🤝 Contributing  
 
-Commit your changes and push to the branch.
+Contributions are **welcome!** 🚀 If you'd like to contribute:  
 
-Submit a pull request.
+1️⃣ **Fork the repository**  
+2️⃣ **Create a new branch** for your feature or bugfix  
+3️⃣ **Commit** your changes and push to the branch  
+4️⃣ **Submit a pull request**  
 
-License
-This project is licensed under the MIT License. See the LICENSE file for details.
+---
 
-Acknowledgments
-AviationStack for providing flight route data.
+## 📜 License  
 
-Carbon Interface for carbon emissions calculations.
+This project is licensed under the **MIT License**. See the **LICENSE** file for details.  
 
-Chart.js for data visualization.
+---
 
-Contact
-For questions or feedback, please contact:
+## 🙌 Acknowledgments  
 
-Your Name - mtanvir360@gmail.com
+- **[AviationStack](https://aviationstack.com/)** – Flight route data  
+- **[Carbon Interface](https://carboninterface.com/)** – Carbon emissions calculations  
+- **[Chart.js](https://www.chartjs.org/)** – Data visualization  
 
-Project Link: https://github.com/tsyncIO/sustainable-route-tracker
+---
+
+## 📞 Contact  
+
+📧 **Your Name** – [mtanvir360@gmail.com](mailto:mtanvir360@gmail.com)  
+
+🔗 **Project Link** – [GitHub Repo](https://github.com/tsyncIO/sustainable-route-tracker)  
+
+---
+
+### ⭐ If you like this project, give it a **star** on GitHub! ⭐  
+
