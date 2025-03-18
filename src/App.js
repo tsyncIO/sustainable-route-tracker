@@ -9,7 +9,7 @@ Chart.register(...registerables);
 
 const fetchAirports = async () => {
   const apiKey = '76e399b187bf819b2cf42c98d11b4595'; // Replace with your AviationStack API key
-  const url = `http://api.aviationstack.com/v1/airports?access_key=${apiKey}&limit=100`;
+  const url = `https://api.aviationstack.com/v1/airports?access_key=${apiKey}&limit=100`;
 
   try {
     const response = await axios.get(url);
