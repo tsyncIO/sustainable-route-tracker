@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/sustainable-route-tracker/static/css/main.ea6ecc9a.css",
+    "main.js": "/sustainable-route-tracker/static/js/main.ef003444.js",
+    "index.html": "/sustainable-route-tracker/index.html",
+    "main.ea6ecc9a.css.map": "/sustainable-route-tracker/static/css/main.ea6ecc9a.css.map",
+    "main.ef003444.js.map": "/sustainable-route-tracker/static/js/main.ef003444.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ea6ecc9a.css",
+    "static/js/main.ef003444.js"
+  ]
+}
